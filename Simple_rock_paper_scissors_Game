@@ -1,0 +1,32 @@
+import random
+print('You are playing rock, paper, scissors game. ')
+
+a= ['rock', 'paper', 'scissors']
+u=input('You choose...')
+c= random.choice(a)
+while u not in a:
+ u= input('Please enter a valid word..')
+else:
+  while u==c:
+   
+   print(f'You choose {u} and computer choose {c}. \n PLay again') 
+   u=input('You choose...')
+   c= random.choice(a)
+   while u not in a:
+     u= input('Please enter a valid word..')
+  else:
+ 
+    if u=='rock' and c== 'paper':
+        print ('You choose rock and computer choose paper. \n You lost!')
+    if u== 'rock' and c =='scissors':
+        print('You choose rock and computer choose scissors. \n You win!')
+    if u=='paper' and c=='rock':
+        print('You choose paper and computer choose rock. \n You win!')
+    if u=='paper' and c== 'scissors':
+        print('You choose paper and computer choose scissors. \n You lost!')
+    if u=='scissors' and c== 'rock':
+        print('You choose scissors and computer choose rock. \n You lost!')
+    if u=='scissors' and c== 'paper':
+        print('You choose scissors and computer choose paper. \n You win!')
+
+    
